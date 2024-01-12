@@ -10,19 +10,17 @@ console.log(NotANumber(undefined));
 
 // Homework2
 function fakePad(text, symbol, counter, before) {
-    if (before) {
-        while (counter > text.length) {
+
+    while (counter > text.length) {
+        if (before) {
             text = symbol + text;
-        }
-        console.log(text)
-    } else {
-        while (counter > text.length) {
+        } else {
             text = text + symbol;
-        }
-        console.log(text)
+        } 
     }
+    console.log(text)
 }
-fakePad("hkjh", "=", 66, false)
+fakePad("hkjh", "+", 15, false)
 
 //Homework3
 // function fakeRandomNumber(min, max) {
